@@ -1,0 +1,179 @@
+@media(max-width: 768px) {
+
+    #home .container {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        min-height: 80vh; /* Make the container take the full height of the viewport */
+        text-align: center; /* Center-align text */
+        padding: 0 15px; /* Add padding to prevent content from touching screen edges */
+        box-sizing: border-box; /* Include padding in width/height calculations */
+    }
+    .title-span {
+        display: none;
+    }
+    #homebutton {
+        text-wrap: nowrap;
+        padding: 5%;
+    }
+    #maintitle {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    #home .button-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactwrapper h2 {
+        font-size: 1.8rem;
+    }
+    #home .button-wrap .button {
+        margin: 0 auto; /* Optional: Ensures the button is perfectly centered */
+    }
+    .submit-btn {
+        padding: 5%;
+        margin-top: 5%;
+    }
+    .main-sub {
+        text-align: center;
+    }
+    .missiontitle {
+        font-size: 1.5rem;
+    }
+    .right-benefits {
+        margin-top: 4%;
+    }
+    .button, .button1, .button2 {
+        padding: 5%;
+    }
+    .left-corporate {
+        margin-top: 15%;
+    }
+    .team-row {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
+        text-align: center; /* Center text */
+    }
+
+    .team-row .col-sm-12 {
+        margin-bottom: 20px; /* Add space between stacked items */
+    }
+
+    .team-row img {
+        margin: 0 auto; /* Center the images */
+        max-width: 80%; /* Adjust the image size for smaller screens */
+    }
+
+    .team-row p {
+        text-align: center; /* Center the text */
+    }
+
+    #mainabout-title {
+        font-size: 3.5rem !important;
+    }
+    #aboutmain p {
+        font-size: 1.4rem !important;
+    }
+    #aboutmain .container {
+        margin-top: 30% !important;
+    }
+
+
+    #experience .item {
+        margin-top: 4%;
+    }
+
+    #prepaidcards {
+        margin-top: 10%
+    }
+    #foreignexchange img {
+        margin-top: 10%;
+    }
+    .ibans-title {
+        padding-top: 7%;
+    }
+    .horizons-image {
+        margin-top: 15%;
+    }
+    .licensing-img {
+        margin-bottom: 15%;
+    }
+    #baas-services {
+        padding-top: 20%;
+    }
+    .horizons-image {
+        height: 0;
+    }
+    .horizons-image, .baas-group {
+        display: none;
+    }
+}
+
+/* Base adjustments for the footer */
+footer {
+    font-size: 1rem;
+  }
+  
+  /* Tablet screens */
+  @media (max-width: 768px) {
+    footer {
+      font-size: 0.9rem;
+    }
+  
+    .footer-logo {
+      width: 120px;
+    }
+  
+    .flag-img {
+      width: 65px;
+    }
+  
+    footer input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Phones */
+  @media (max-width: 480px) {
+    footer {
+      font-size: 0.8rem;
+    }
+  
+    .footer-logo {
+      width: 100px;
+    }
+  
+    .flag-img {
+      width: 50px;
+    }
+  
+    footer input[type="email"] {
+      width: 100%;
+      padding: 6px;
+      font-size: 0.8rem;
+    }
+  
+    .policies a {
+      display: block;
+      margin-bottom: 8px;
+    }
+  
+    .newsletterform p {
+      font-size: 0.75rem;
+    }
+  
+    .location p {
+      margin-bottom: 0.25rem;
+    }
+    #copyrightpar {
+        margin-top: 20px;
+    }
+  }
+  
+
+

@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5WTZSRNZ');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="breinrock, international banking, finance, finance solutions, global payments">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="particles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="background.css">
+
+    <link rel="stylesheet" href="contactheader.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link rel="icon" href="imgs/icons/relicon.png">
+    <title>Effortlessly collect, hold, and disburse funds like a local in over 35 currencies.</title>
+    <style>
+        * {
+            color: #fff;
+        }
+
+        /* Logo Slider Styles */
+        .logo-slider {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+        }
+
+        /* Full Width Logo Slider */
+        .logo-slider-fullwidth {
+            overflow: hidden;
+            width: 100vw;
+            position: relative;
+            margin-left: calc(-50vw + 50%);
+        }
+
+        .logo-slider-track {
+            display: flex;
+            animation: scroll 20s linear infinite;
+            width: calc(200px * 16);
+            /* 8 logos * 2 sets * 200px each */
+        }
+
+        .logo-item {
+            flex: 0 0 200px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .logo-item:hover {
+            opacity: 1;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-200px * 8));
+                /* Move by half the total width */
+            }
+        }
+
+        /* Pause animation on hover */
+        .logo-slider:hover .logo-slider-track {
+            animation-play-state: paused;
+        }
+
+        /* Glassmorphic text styling - 3D Oyster Effect */
+        .glassmorphic-text {
+            background:
+                radial-gradient(ellipse at top, rgba(255, 255, 255, 0.4) 0%, transparent 50%),
+                linear-gradient(135deg,
+                    rgba(255, 255, 255, 0.3) 0%,
+                    rgba(255, 255, 255, 0.15) 30%,
+                    rgba(255, 255, 255, 0.05) 70%,
+                    rgba(0, 0, 0, 0.1) 100%);
+            backdrop-filter: blur(25px) saturate(200%) brightness(110%);
+            -webkit-backdrop-filter: blur(25px) saturate(200%) brightness(110%);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px 8px 20px 8px;
+            padding: 8px 16px;
+            display: inline-block;
+            margin: 10px 0;
+            box-shadow:
+                0 15px 50px 0 rgba(31, 38, 135, 0.4),
+                0 5px 20px 0 rgba(0, 0, 0, 0.2),
+                inset 0 2px 0 rgba(255, 255, 255, 0.6),
+                inset 0 -2px 0 rgba(0, 0, 0, 0.1),
+                inset 2px 0 0 rgba(255, 255, 255, 0.3),
+                inset -2px 0 0 rgba(0, 0, 0, 0.1);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            font-size: 0.9rem;
+            position: relative;
+            overflow: hidden;
+            transform: perspective(1000px) rotateX(5deg) rotateY(-2deg);
+            transition: all 0.3s ease;
+        }
+
+        .glassmorphic-text:hover {
+            transform: perspective(1000px) rotateX(2deg) rotateY(-1deg) scale(1.02);
+            box-shadow:
+                0 20px 60px 0 rgba(31, 38, 135, 0.5),
+                0 8px 25px 0 rgba(0, 0, 0, 0.3),
+                inset 0 2px 0 rgba(255, 255, 255, 0.7),
+                inset 0 -2px 0 rgba(0, 0, 0, 0.15),
+                inset 2px 0 0 rgba(255, 255, 255, 0.4),
+                inset -2px 0 0 rgba(0, 0, 0, 0.15);
+        }
+
+        .glassmorphic-text::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg,
+                    transparent,
+                    rgba(255, 255, 255, 0.2),
+                    transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                left: -100%;
+            }
+
+            100% {
+                left: 100%;
+            }
+        }
+
+        .advantage {
+            background-color: rgb(12, 13, 41);
+            border-radius: 10px;
+            padding: 1.5rem 1rem;
+            margin: 0 0.25rem 1rem 0.25rem !important;
+            flex: 0 0 calc(25% - 0.5rem) !important;
+            max-width: calc(25% - 0.5rem) !important;
+        }
+
+        .advantage:last-child {
+            margin-right: 0;
+        }
+
+        @media (max-width: 991.98px) {
+            .advantage {
+                flex: 0 0 calc(50% - 0.5rem) !important;
+                max-width: calc(50% - 0.5rem) !important;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .advantage {
+                flex: 0 0 100% !important;
+                max-width: 100% !important;
+                margin: 0 0 1rem 0 !important;
+            }
+        }
+
+        /* Comparison Table Styles */
+        .comparison-card {
+            background: rgb(12, 13, 41);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            height: 100%;
+        }
+
+        .comparison-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: white;
+            text-align: center;
+        }
+
+        .comparison-table {
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        .comparison-table thead th {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            font-weight: 600;
+            color: white;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .comparison-table tbody tr {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .comparison-table tbody tr:last-child {
+            border-bottom: none;
+        }
+
+        .comparison-table tbody td {
+            border: none;
+            vertical-align: middle;
+        }
+
+        .feature-column {
+            width: 40%;
+            padding: 1rem;
+            font-weight: 600;
+            color: white;
+            text-align: left;
+        }
+
+        .competitor-column {
+            width: 15%;
+            padding: 1rem;
+            text-align: center;
+            font-weight: 600;
+            color: white;
+        }
+
+        .feature-cell {
+            width: 40%;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            text-align: left;
+        }
+
+        .competitor-cell {
+            width: 15%;
+            padding: 1rem;
+            text-align: center;
+            font-weight: 600;
+            color: white;
+        }
+
+        .breinrock-highlight {
+            background: rgb(62, 116, 214) !important;
+            color: white !important;
+        }
+
+        /* Contact Landing Background Styles */
+        .contactlanding-bg {
+            background-image: url('imgs/landingcontact.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 60vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin: 0 2rem;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .contactlanding-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        .contactwrapper-landing {
+            position: relative;
+            z-index: 2;
+        }
+
+        .contactcontent-landing {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Analytics Container */
+        .analytics-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .analytics-div {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            opacity: 0;
+            transform: scale(0.3);
+            animation: analyticsAppear 2s ease-out forwards;
+        }
+
+        .analytics-pie {
+            top: 25%;
+            left: 3%;
+            animation-delay: 0.5s;
+        }
+
+        .analytics-graph {
+            top: 25%;
+            right: 3%;
+            animation-delay: 1s;
+        }
+
+        /* Glassmorphic Background */
+        .glassmorphic-bg {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg,
+                    rgba(255, 255, 255, 0.1) 0%,
+                    rgba(255, 255, 255, 0.05) 50%,
+                    rgba(255, 255, 255, 0.1) 100%);
+            backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glassmorphic-bg::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg,
+                    transparent 30%,
+                    rgba(255, 255, 255, 0.1) 50%,
+                    transparent 70%);
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        /* Pie Chart Styles */
+        .pie-chart {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: relative;
+            margin-bottom: 12px;
+            animation: pieRotate 4s ease-in-out infinite;
+        }
+
+        .pie-slice {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            clip-path: polygon(50% 50%, 50% 0%, 100% 0%);
+            transform-origin: 50% 50%;
+        }
+
+        .slice-1 {
+            background: linear-gradient(45deg, #4CAF50, #66BB6A);
+            transform: rotate(0deg);
+            animation: sliceGrow 1.5s ease-out 2s forwards;
+        }
+
+        .slice-2 {
+            background: linear-gradient(45deg, #2196F3, #42A5F5);
+            transform: rotate(120deg);
+            animation: sliceGrow 1.5s ease-out 2.2s forwards;
+        }
+
+        .slice-3 {
+            background: linear-gradient(45deg, #FF9800, #FFB74D);
+            transform: rotate(240deg);
+            animation: sliceGrow 1.5s ease-out 2.4s forwards;
+        }
+
+        .pie-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: centerPulse 2s ease-in-out 2.5s infinite;
+        }
+
+        .percentage {
+            font-size: 12px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Line Graph Styles */
+        .line-graph {
+            width: 100px;
+            height: 60px;
+            margin-bottom: 12px;
+        }
+
+        .graph-svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .graph-line {
+            fill: none;
+            stroke: #4CAF50;
+            stroke-width: 2;
+            stroke-dasharray: 200;
+            stroke-dashoffset: 200;
+            animation: lineDraw 2s ease-out 2s forwards;
+        }
+
+        .data-point {
+            fill: #4CAF50;
+            opacity: 0;
+            animation: pointAppear 0.3s ease-out forwards;
+        }
+
+        .data-point:nth-child(2) {
+            animation-delay: 2.2s;
+        }
+
+        .data-point:nth-child(3) {
+            animation-delay: 2.4s;
+        }
+
+        .data-point:nth-child(4) {
+            animation-delay: 2.6s;
+        }
+
+        .data-point:nth-child(5) {
+            animation-delay: 2.8s;
+        }
+
+        .data-point:nth-child(6) {
+            animation-delay: 3s;
+        }
+
+        .data-point:nth-child(7) {
+            animation-delay: 3.2s;
+        }
+
+        .data-point:nth-child(8) {
+            animation-delay: 3.4s;
+        }
+
+        .chart-label {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 500;
+            text-align: center;
+            animation: labelFade 1s ease-out 3.5s forwards;
+            opacity: 0;
+        }
+
+        /* Animations */
+        @keyframes analyticsAppear {
+            0% {
+                opacity: 0;
+                transform: scale(0.3) rotate(-10deg);
+            }
+
+            50% {
+                opacity: 0.8;
+                transform: scale(1.1) rotate(5deg);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+        }
+
+        @keyframes pieRotate {
+
+            0%,
+            100% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(5deg);
+            }
+        }
+
+        @keyframes sliceGrow {
+            0% {
+                clip-path: polygon(50% 50%, 50% 50%, 50% 50%);
+            }
+
+            100% {
+                clip-path: polygon(50% 50%, 50% 0%, 100% 0%);
+            }
+        }
+
+        @keyframes centerPulse {
+
+            0%,
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            50% {
+                transform: translate(-50%, -50%) scale(1.1);
+            }
+        }
+
+        @keyframes lineDraw {
+            0% {
+                stroke-dashoffset: 200;
+            }
+
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes pointAppear {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes labelFade {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .analytics-div {
+                width: 100px;
+                height: 100px;
+            }
+
+            .analytics-pie {
+                top: 20%;
+                left: 2%;
+            }
+
+            .analytics-graph {
+                top: 20%;
+                right: 2%;
+            }
+
+            .pie-chart {
+                width: 50px;
+                height: 50px;
+            }
+
+            .pie-center {
+                width: 25px;
+                height: 25px;
+            }
+
+            .percentage {
+                font-size: 9px;
+            }
+
+            .line-graph {
+                width: 70px;
+                height: 45px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .analytics-div {
+                width: 80px;
+                height: 80px;
+            }
+
+            .analytics-pie {
+                top: 15%;
+                left: 1%;
+            }
+
+            .analytics-graph {
+                top: 15%;
+                right: 1%;
+            }
+
+            .pie-chart {
+                width: 40px;
+                height: 40px;
+            }
+
+            .pie-center {
+                width: 20px;
+                height: 20px;
+            }
+
+            .percentage {
+                font-size: 8px;
+            }
+
+            .line-graph {
+                width: 60px;
+                height: 35px;
+            }
+        }
+
+        /* Award Section Styles */
+        .award-section {
+            background: linear-gradient(135deg,
+                    rgba(255, 255, 255, 0.05) 0%,
+                    rgba(255, 255, 255, 0.02) 50%,
+                    rgba(255, 255, 255, 0.05) 100%);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .award-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: white;
+            text-align: center;
+            margin-bottom: 3rem;
+            background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .company-logos {
+            gap: 3rem;
+        }
+
+        .company-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+
+        .company-logo:hover {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        .company-logo img {
+            height: 80px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Responsive Design for Award Section */
+        @media (max-width: 768px) {
+            .award-title {
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .company-logos {
+                gap: 2rem;
+            }
+
+            .company-logo img {
+                height: 60px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .award-title {
+                font-size: 2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .company-logos {
+                gap: 1.5rem;
+            }
+
+            .company-logo img {
+                height: 50px;
+            }
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .comparison-card {
+                padding: 1rem;
+            }
+
+            .comparison-title {
+                font-size: 1.25rem;
+            }
+
+            .feature-column,
+            .competitor-column,
+            .feature-cell,
+            .competitor-cell {
+                padding: 0.75rem 0.5rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Responsive heading tweaks (smaller on phones) */
+        .hero-title {
+            font-weight: 700;
+        }
+
+        .compare-title {
+            font-weight: 700;
+        }
+
+        .cta-title {
+            font-weight: 700;
+        }
+
+        @media (max-width: 767.98px) {
+            .hero-title {
+                font-size: 2rem !important;
+            }
+
+            .compare-title {
+                font-size: 1.75rem !important;
+            }
+
+            .cta-title {
+                font-size: 1.75rem !important;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .hero-title {
+                font-size: 1.75rem !important;
+            }
+
+            .compare-title {
+                font-size: 1.5rem !important;
+            }
+
+            .cta-title {
+                font-size: 1.5rem !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WTZSRNZ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <style>
+        /* Demo CTA styles */
+        #demo-cta .demo-wrapper {
+            background: rgb(12, 13, 41);
+            border-radius: 20px;
+            margin: 0 2rem;
+        }
+
+        #demo-cta .demo-divider {
+            width: 1px;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        #demo-cta .demo-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        #demo-cta .demo-list li {
+            position: relative;
+            padding-left: 1.25rem;
+            margin-bottom: .75rem;
+        }
+
+        #demo-cta .demo-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #fff;
+        }
+
+        /* Glassy inputs */
+        #demo-cta .demo-input {
+            background: linear-gradient(135deg,
+                    rgba(255, 255, 255, 0.16) 0%,
+                    rgba(255, 255, 255, 0.08) 50%,
+                    rgba(255, 255, 255, 0.16) 100%);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 14px;
+            padding: .9rem 1.1rem;
+            backdrop-filter: blur(12px) saturate(160%);
+            -webkit-backdrop-filter: blur(12px) saturate(160%);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+        }
+
+        #demo-cta .demo-input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        #demo-cta .form-select.demo-input {
+            color: #fff;
+            background-image: none;
+        }
+
+        #demo-cta .demo-input:focus {
+            outline: none;
+            border-color: rgba(255, 255, 255, 0.45);
+            box-shadow: 0 0 0 .2rem rgba(62, 116, 214, .35), 0 8px 24px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        }
+
+        /* Placeholder and invalid states */
+        #demo-cta .demo-form select:invalid {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        #demo-cta .demo-form select option {
+            color: #000;
+        }
+
+        /* Button color to site light blue */
+        #demo-cta .demo-btn {
+            background-color: rgb(62, 116, 214);
+            color: #fff;
+            border: none;
+        }
+
+        #demo-cta .demo-btn:hover {
+            filter: brightness(1.05);
+        }
+
+        @media (max-width: 767.98px) {
+            #demo-cta .demo-wrapper {
+                margin: 0 1rem;
+            }
+
+            #demo-cta .demo-divider {
+                display: none;
+            }
+        }
+
+        /* Demo Popup Styles */
+        .demo-popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 9999;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .demo-popup-overlay.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 1;
+        }
+
+        .demo-popup-content {
+            background: rgb(12, 13, 41);
+            border-radius: 20px;
+            max-width: 900px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            transform: scale(0.8);
+            transition: transform 0.3s ease;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .demo-popup-overlay.show .demo-popup-content {
+            transform: scale(1);
+        }
+
+        .demo-popup-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .demo-popup-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            padding: 0;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        .demo-popup-close:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .demo-popup-body {
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .demo-popup-content {
+                width: 95%;
+                margin: 1rem;
+            }
+
+            .demo-popup-header {
+                padding: 1rem 1.5rem;
+            }
+
+            .demo-popup-body {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Prevent text wrapping in navigation buttons */
+        .navbar-nav .button {
+            white-space: nowrap;
+        }
+
+        /* Reduce hero subheading size */
+        #landingpage-hero .glassmorphic-text {
+            font-size: .85rem;
+        }
+
+        @media (max-width: 767.98px) {
+            #landingpage-hero .glassmorphic-text {
+                font-size: .75rem;
+            }
+        }
+
+        /* Hide contact section glassmorphic analytics on mobile */
+        @media (max-width: 767.98px) {
+            #contactlanding .analytics-container {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Demo Popup Modal -->
+    <div id="demoPopup" class="demo-popup-overlay">
+        <div class="demo-popup-content">
+            <div class="demo-popup-header">
+                <h3 class="text-white fw-bold mb-0">Book a Demo</h3>
+                <button class="demo-popup-close" onclick="closeDemoPopup()">&times;</button>
+            </div>
+            <div class="demo-popup-body">
+                <div class="row align-items-stretch">
+                    <!-- Left Column -->
+                    <div class="col-md-6 pe-md-4 d-flex">
+                        <div class="w-100">
+                            <h2 class="text-white fw-bold mb-3">Simplify international payments at scale</h2>
+                            <p class="text-white-50 mb-4">Automate international mass payments with an unrivalled global
+                                pay platform for businesses.</p>
+                            <ul class="text-white mb-0 demo-list">
+                                <li>International payment coverage to 200 countries in 120 currencies</li>
+                                <li>50+ global payment methods including SEPA, ACH, PayPal and more</li>
+                                <li>Self-service payment portal and payee onboarding</li>
+                                <li>International tax and regulatory compliance, with automated tax ID validation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="col-md-1 d-none d-md-flex justify-content-center">
+                        <div class="demo-divider"></div>
+                    </div>
+
+                    <!-- Right Column: Form -->
+                    <div class="col-md-5 ps-md-4 mt-4 mt-md-0">
+                        <p class="text-white-50 mb-4">Complete the form below, and we'll contact you to schedule your
+                            tailored demo.</p>
+                        <form class="demo-form" action="#" method="post" novalidate>
+                            <input type="email" class="form-control demo-input mb-3" placeholder="*Work email address"
+                                required>
+                            <select class="form-select demo-input mb-3" required>
+                                <option value="" selected disabled>*Industry</option>
+                                <option>Technology</option>
+                                <option>E-commerce</option>
+                                <option>Finance</option>
+                                <option>Services</option>
+                                <option>Other</option>
+                            </select>
+                            <select class="form-select demo-input mb-3" required>
+                                <option value="" selected disabled>*Company size</option>
+                                <option>1-10</option>
+                                <option>11-50</option>
+                                <option>51-200</option>
+                                <option>201-1,000</option>
+                                <option>1,001+</option>
+                            </select>
+                            <input type="tel" class="form-control demo-input mb-3" placeholder="Phone">
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="demoConsentPopup">
+                                <label class="form-check-label text-white-50" for="demoConsentPopup">
+                                    I consent to the use of my personal information in accordance with the
+                                    <a href="privacypolicy.html" class="text-white">Privacy Policy</a>.
+                                </label>
+                            </div>
+                            <button type="submit" class="button button1 px-4">Book a Demo</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gradient-bg">
+        <div class="gradients-container">
+            <div class="g1"></div>
+            <div class="g2"></div>
+            <div class="g3"></div>
+            <div class="g4"></div>
+            <div class="g5"></div>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img class="logomain" src="imgs/logo.png" alt="Logo">
+                </a>
+
+                <!-- Hamburger Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible Content -->
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <!-- Center Navigation Links -->
+                    <ul class="navbar-nav mx-auto" id="navItems">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white dropdown-toggle" href="#" id="productsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark bg-black" aria-labelledby="productsDropdown">
+                                <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                                <li><a class="dropdown-item" href="corporate.html">Corporate and Personal Accounts</a>
+                                </li>
+                                <li><a class="dropdown-item" href="prepaid.html">Prepaid Cards</a></li>
+                                <li><a class="dropdown-item" href="foreign.html">Foreign Exchange</a></li>
+                                <li><a class="dropdown-item" href="baas.html">BaaS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark bg-black" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="about.html">Learn More</a></li>
+                                <li><a class="dropdown-item" href="news.html">News</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <!-- Desktop: Right Auth Links -->
+                    <ul class="navbar-nav d-none d-lg-flex">
+                        <a href="#" onclick="openDemoPopup(); return false;" class="button button1 px-3 py-3">Get in
+                            touch</a>
+                    </ul>
+
+                    <!-- Mobile Auth Links – inside hamburger -->
+                    <ul class="navbar-nav d-lg-none mt-3">
+                        <a href="#" onclick="openDemoPopup(); return false;" class="button button1">Get in touch</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <svg width="0" height="0">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+                <feColorMatrix in="blur" mode="hardLight" values="0 0 0 0 0
+                                                                 0 0 0 0 0
+                                                                 0 0 0 0 0
+                                                                 0 0 0 10 -10" result="coloredBlur" />
+                <feMerge>
+                    <feMergeNode in="SourceGraphic" />
+                    <feMergeNode in="coloredBlur" />
+                </feMerge>
+            </filter>
+        </defs>
+    </svg>
+    <section style="height: 80vh;" class="w-100-" id="landingpage-hero">
+        <div class="container h-100">
+            <div class="row h-100 d-flex align-items-center justify-content-center">
+                <div class="text-center mt-5">
+                    <p class="glassmorphic-text">Trusted by 20k+ people and businesses</p>
+                    <h1 class="pb-4 hero-title display-4">Frustrated with slow international transfers and hidden fees?
+                    </h1>
+                    <p style="width: 70%;" class="mx-auto pb-3">Effortlessly collect, hold, and disburse funds like a
+                        local in over 35 currencies with Breinrock’s global collection accounts. Simplify your
+                        international operations.</p>
+
+                    <div class="button-wrap">
+                        <a id="homebutton" href="https://ebank.breinrock.com/signUp" class="button button1">Sign up for
+                            free</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo CTA Section -->
+
+
+
+    <section class="w-100 py-5 mt-5">
+        <div class="container">
+            <h2 class="text-center pb-5 mb-5">Why Breinrock?
+            </h2>
+            <p class="pt-3 text-white-50">Breinrock combines world-class financial infrastructure with personal
+                relationship management.</p>
+            <div class="row d-flex align-items-center justify-around">
+                <div class="advantage col-lg-3 col-md-6 col-sm-10 text-center">
+                    <h4>Operate Locally
+                    </h4>
+                    <p>Access domestic payment rails within the UAE, UK, EU, US, and Canada for faster, local
+                        transactions.</p>
+                </div>
+                <div class="advantage col-lg-3 col-md-6 col-sm-10 text-center">
+                    <h4>All-in-One <br>Platform
+                    </h4>
+                    <p>Manage foreign exchange, digital assets, and multi-currency accounts from a single secure
+                        dashboard..</p>
+                </div>
+                <div class="advantage col-lg-3 col-md-6 col-sm-10 text-center">
+                    <h4>Human <br> Support
+
+                    </h4>
+                    <p>Every Breinrock client is assigned a dedicated relationship manager for personalized guidance and
+                        ongoing support.</p>
+                </div>
+                <div class="advantage col-lg-3 col-md-6 col-sm-10 text-center">
+                    <h4>Global <br> Reach
+                    </h4>
+                    <p>Send and receive payments in 40+ SWIFT currencies and 60+ local payout currencies worldwide.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="py-5 mt-5 mb-5" id="compare">
+        <div class="container">
+            <p>COMPARE</p>
+            <h2 class="compare-title display-5">How Breinrock Stands Apart From Other Providers</h2>
+            <div class="row mt-5">
+                <!-- End-to-End Compliance & Risk Management Card -->
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="comparison-card">
+                        <h3 class="comparison-title">End-to-End Compliance & Risk Management</h3>
+                        <div class="table-responsive">
+                            <table class="table table-borderless comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th class="feature-column">Features</th>
+                                        <th class="competitor-column breinrock-highlight">Breinrock</th>
+                                        <th class="competitor-column">Payoneer</th>
+                                        <th class="competitor-column">PayPal</th>
+                                        <th class="competitor-column">Trolley</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="feature-cell">
+                                            <span>Tax Compliance</span>
+                                        </td>
+                                        <td class="competitor-cell breinrock-highlight">✓</td>
+                                        <td class="competitor-cell">Limited</td>
+                                        <td class="competitor-cell">✕</td>
+                                        <td class="competitor-cell">✓</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="feature-cell">
+                                            <span>Fraud Prevention</span>
+                                        </td>
+                                        <td class="competitor-cell breinrock-highlight">✓</td>
+                                        <td class="competitor-cell">✓</td>
+                                        <td class="competitor-cell">Limited</td>
+                                        <td class="competitor-cell">✓</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="feature-cell">
+                                            <span>Self-Billing</span>
+                                        </td>
+                                        <td class="competitor-cell breinrock-highlight">✓</td>
+                                        <td class="competitor-cell">✕</td>
+                                        <td class="competitor-cell">✕</td>
+                                        <td class="competitor-cell">Limited</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Global Payment Infrastructure Card -->
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="comparison-card">
+                        <h3 class="comparison-title">Global Payment Infrastructure</h3>
+                        <div class="table-responsive">
+                            <table class="table table-borderless comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th class="feature-column">Features</th>
+                                        <th class="competitor-column breinrock-highlight">Breinrock</th>
+                                        <th class="competitor-column">Payoneer</th>
+                                        <th class="competitor-column">PayPal</th>
+                                        <th class="competitor-column">Trolley</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="feature-cell">
+                                            <span>Payments Network</span>
+                                        </td>
+                                        <td class="competitor-cell breinrock-highlight">✓</td>
+                                        <td class="competitor-cell">Limited</td>
+                                        <td class="competitor-cell">Limited</td>
+                                        <td class="competitor-cell">Limited</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="feature-cell">
+                                            <span>FX Solution</span>
+                                        </td>
+                                        <td class="competitor-cell breinrock-highlight">✓</td>
+                                        <td class="competitor-cell">Limited</td>
+                                        <td class="competitor-cell">Limited</td>
+                                        <td class="competitor-cell">Limited</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="feature-cell">
+                                            <span>Payee Management</span>
+                                        </td>
+                                        <td class="competitor-cell breinrock-highlight">✓</td>
+                                        <td class="competitor-cell">Limited</td>
+                                        <td class="competitor-cell">Limited</td>
+                                        <td class="competitor-cell">✓</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-wrap">
+                    <a id="homebutton" href="contact.html" class="button button1">Sign up for free</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- AWARD SECTION -->
+    <section class="award-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-sm-12 text-center">
+                    <h2 class="award-title mb-5">#1 Award-Winning Global Payments Provider</h2>
+                    <div class="company-logos d-flex justify-content-center align-items-center flex-wrap gap-4">
+                        <div class="company-logo">
+                            <img src="imgs/4logos.png" alt="Featured in Forbes, TechCrunch, Bloomberg, Financial Times"
+                                class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials mt-5">
+        <div class="container-fluid">
+            <p style="font-size: 1.4rem;" class="text-white text-center pt-4">WHAT OUR CLIENTS SAY</p>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="customers-testimonials" class="owl-carousel">
+
+                        <!-- TESTIMONIAL 1 - Aleš H. -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle" src="imgs/icons/testimonialquotes.png" alt="">
+                                <p>In today's ever-changing market, trust in your partners has never been more important
+                                    than now. The Breinrock team brings innovation to their approach to building a solid
+                                    banking system, one that's closely aligned with its customers, minimizing the long
+                                    procedure of bureaucracy. Expect efficiency, smooth operations, and swift handling
+                                    of any request when you put your trust in the Breinrock team and their diverse range
+                                    of high-quality products.</p>
+                            </div>
+                            <div class="testimonial-name">Aleš H.</div>
+                        </div>
+
+                        <!-- TESTIMONIAL 2 - Lambros L. -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle" src="imgs/icons/testimonialquotes.png" alt="">
+                                <p>We've been extremely satisfied with the service since transitioning to Breinrock.
+                                    Their technology is outstanding, and their customer support team is top-notch.
+                                    They're exceptionally responsive, attentive to our needs, and incredibly helpful.
+                                    Thanks to this partnership, we no longer consider sales calls from other payment
+                                    service providers.</p>
+                            </div>
+                            <div class="testimonial-name">Lambros L.</div>
+                        </div>
+
+                        <!-- TESTIMONIAL 3 - Stelios P. -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle" src="imgs/icons/testimonialquotes.png" alt="">
+                                <p>We are delighted with the payment services, particularly the USD/EUR options. We also
+                                    highly value their SEPA service and, most importantly, the partnership relationship
+                                    we've established with Breinrock. If your company has complex payment needs,
+                                    Breinrock offers tailor-made solutions that will definitely deliver.</p>
+                            </div>
+                            <div class="testimonial-name">Stelios P.</div>
+                        </div>
+
+                        <!-- TESTIMONIAL 4 - Danylo K. -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle" src="imgs/icons/testimonialquotes.png" alt="">
+                                <p>Well, I don't really know what to begin with since as to me Breinrock has no
+                                    competitors and blasts everyone in every single metrics possible. Speed of support –
+                                    lightning fast, quality of service – absolute, aspect of security – fundamental,
+                                    commissions – more than fair, variety of instruments – abundance, client orientation
+                                    – superior, trustworthiness – like to a friend, overall vibe – extremely positive
+                                    and confident... Will I recommend to anyone? Absolutely yes.</p>
+                            </div>
+                            <div class="testimonial-name">Danylo K.</div>
+                        </div>
+
+                        <!-- TESTIMONIAL 5 - Andre -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle" src="imgs/icons/testimonialquotes.png" alt="">
+                                <p>We admire what Breinrock is doing. Thank you for making Banking human again.</p>
+                            </div>
+                            <div class="testimonial-name">Andre</div>
+                        </div>
+
+                        <!-- TESTIMONIAL 6 - Stelios P. (Duplicate) -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle" src="imgs/icons/testimonialquotes.png" alt="">
+                                <p>We are delighted with the payment services, particularly the USD/EUR options. We also
+                                    highly value their SEPA service and, most importantly, the partnership relationship
+                                    we've established with Breinrock. If your company has complex payment needs,
+                                    Breinrock offers tailor-made solutions that will definitely deliver.</p>
+                            </div>
+                            <div class="testimonial-name">Stelios P.</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END OF TESTIMONIALS -->
+    <section id="contactlanding" class="contactlanding-bg">
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-lg-10 col-md-10 col-sm-10 contactwrapper-landing text-center">
+                    <!-- Animated Analytics Divs -->
+                    <div class="analytics-container">
+                        <!-- Div 1: Pie Chart Analytics -->
+                        <div class="analytics-div analytics-pie">
+                            <div class="glassmorphic-bg">
+                                <div class="pie-chart">
+                                    <div class="pie-slice slice-1"></div>
+                                    <div class="pie-slice slice-2"></div>
+                                    <div class="pie-slice slice-3"></div>
+                                    <div class="pie-center">
+                                        <span class="percentage">85%</span>
+                                    </div>
+                                </div>
+                                <div class="chart-label">Success Rate</div>
+                            </div>
+                        </div>
+
+                        <!-- Div 2: Line Graph Analytics -->
+                        <div class="analytics-div analytics-graph">
+                            <div class="glassmorphic-bg">
+                                <div class="line-graph">
+                                    <svg viewBox="0 0 200 100" class="graph-svg">
+                                        <polyline points="10,80 40,60 70,40 100,30 130,25 160,20 190,15"
+                                            class="graph-line" />
+                                        <circle cx="10" cy="80" r="3" class="data-point" />
+                                        <circle cx="40" cy="60" r="3" class="data-point" />
+                                        <circle cx="70" cy="40" r="3" class="data-point" />
+                                        <circle cx="100" cy="30" r="3" class="data-point" />
+                                        <circle cx="130" cy="25" r="3" class="data-point" />
+                                        <circle cx="160" cy="20" r="3" class="data-point" />
+                                        <circle cx="190" cy="15" r="3" class="data-point" />
+                                    </svg>
+                                </div>
+                                <div class="chart-label">Growth Trend</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="contactcontent-landing text-center">
+                        <h2 class="text-white pb-4 cta-title display-5">Get Up and Running in Weeks, Not Months</h2>
+                        <p
+                            style="font-size: 1.2rem; font-weight: 300; line-height: 1.4; max-width: 600px; margin: 0 auto;">
+                            Book a demo to get started today and take control of your payment processes with Tipalti.
+                            Experience the power of streamlined payments and see how we can transform your business
+                            operations.</p>
+                        <a href="https://ebank.breinrock.com/signUp" class="button contactbutton button1"
+                            target="_blank">Sign up for free</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container py-5">
+        <h2 class="text-white text-center mb-4">FAQ's</h2>
+        <div class="accordion" id="faqAccordion">
+
+            <div class="accordion-item bg-transparent border-0 border-bottom border-white">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-transparent text-white px-0" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq1">
+                        <span class="me-auto">What is a prepaid Mastercard?</span>
+                        <span class="icon-toggle"></span>
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-white ps-0">
+                        A prepaid Mastercard is a reloadable payment card that allows you to load funds onto it before
+                        using it for purchases. It's not linked to a bank account and can be used wherever Mastercard is
+                        accepted.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-0 border-bottom border-white">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-transparent text-white px-0" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq2">
+                        <span class="me-auto">What should I do if my prepaid Mastercard is lost or stolen?</span>
+                        <span class="icon-toggle"></span>
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-white ps-0">
+                        If your card is lost or stolen, you can freeze your card instantly on Breinrock’s platform, by
+                        clicking on the Freeze Card Icon under your Physical Card Details. Additionally, contact our
+                        Customer Support Team by email: cards@breinrock.com
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-0 border-bottom border-white">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-transparent text-white px-0" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq3">
+                        <span class="me-auto">Can I withdraw cash from ATMs with my prepaid Mastercard?</span>
+                        <span class="icon-toggle"></span>
+                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-white ps-0">
+                        Yes, you can withdraw cash from ATMs that accept Mastercard. However, some ATMs may charge fees.
+                        There is also a daily/monthly withdrawal limit.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-0 border-bottom border-white">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-transparent text-white px-0" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq4">
+                        <span class="me-auto">How do I apply for a prepaid card with Breinrock?</span>
+                        <span class="icon-toggle"></span>
+                    </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-white ps-0">
+                        You can get a prepaid card by applying for one through the Breinrock platform. There is a simple
+                        application process, submission of documents, and Compliance Check prior to approval.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-0 border-bottom border-white">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-transparent text-white px-0" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq5">
+                        <span class="me-auto">How do I activate my prepaid card with Breinrock?</span>
+                        <span class="icon-toggle"></span>
+                    </button>
+                </h2>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-white ps-0">
+                        Log in to your account &gt; click "Activate Card" in Cards &gt; enter the last 4 digits of your
+                        card &gt; click "Next" &gt; Your card is active!
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-0 border-bottom border-white">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-transparent text-white px-0" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq6">
+                        <span class="me-auto">How can I load money onto my prepaid Mastercard?</span>
+                        <span class="icon-toggle"></span>
+                    </button>
+                </h2>
+                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-white ps-0">
+                        You can load money onto your card from your main GBP / EURO Account on Breinrock’s platform.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-0 border-bottom border-white">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-transparent text-white px-0" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq7">
+                        <span class="me-auto">Is my prepaid Mastercard secure?</span>
+                        <span class="icon-toggle"></span>
+                    </button>
+                </h2>
+                <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-white ps-0">
+                        Yes, your prepaid Mastercard is secure. It's protected by Mastercard's security features,
+                        including PIN protection, anti-fraud monitoring and extra security measures when you shop
+                        online.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-0 border-bottom border-white">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-transparent text-white px-0" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq8">
+                        <span class="me-auto">How can I check my prepaid Mastercard balance and transaction
+                            history?</span>
+                        <span class="icon-toggle"></span>
+                    </button>
+                </h2>
+                <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-white ps-0">
+                        You can check your card balance and transaction history online through our platform.
+                        Additionally, you can contact customer support for balance inquiries.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-0 border-bottom border-white">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-transparent text-white px-0" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq9">
+                        <span class="me-auto">Are there any fees associated with my prepaid Mastercard?</span>
+                        <span class="icon-toggle"></span>
+                    </button>
+                </h2>
+                <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-white ps-0">
+                        Please refer to the terms and conditions provided with your card and by email upon approval or
+                        contact our support team for fee details depending on the card type you selected.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-0 border-bottom border-white">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-transparent text-white px-0" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq10">
+                        <span class="me-auto">How do I close my prepaid Mastercard account?</span>
+                        <span class="icon-toggle"></span>
+                    </button>
+                </h2>
+                <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-white ps-0">
+                        To close your prepaid Mastercard account, please contact our customer support for guidance on
+                        the necessary steps and any remaining balance on your card.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-transparent border-0 border-bottom border-white">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-transparent text-white px-0" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq10">
+                        <span class="me-auto">How do I find my card pin?</span>
+                        <span class="icon-toggle"></span>
+                    </button>
+                </h2>
+                <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-white ps-0">
+                        To find your card PIN, log in to the platform, go to Cards, navigate to your card, and click
+                        Reveal Details. Enter the OTP when prompted, then click the rotating arrows icon at the top
+                        right of the card to view the back — your PIN will be displayed there. To activate contactless
+                        payments, please complete a Chip & PIN transaction first.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- TESTIMONIALS -->
+
+
+    <footer style="background-color: rgb(12, 13, 41);" class="text-white mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Logo -->
+                <div class="col-lg-3 col-md-3 mt-5">
+                    <img style="width: 150px;" class="logo" src="imgs/logo.png" alt="Logo">
+                </div>
+
+                <!-- Start a conversation + Newsletter -->
+                <div class="col-lg-3 col-md-3 mt-5">
+                    <p><b>Start a conversation:</b></p>
+                    <p>welcome@breinrock.com</p>
+
+                    <!-- Newsletter -->
+                    <div class="newsletter mt-5">
+                        <p><b>Newsletter</b></p>
+                        <div class="newsletterform">
+                            <p class="text-white">Subscribe to our newsletter to hear about our updates and events.</p>
+                            <input type="email" placeholder="Email">
+                            <a href="#" class="button button1 mt-3 d-inline-block">Subscribe</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Locations and Legal Flags -->
+                <div class="col-lg-6 col-md-6 mt-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-between">
+                                <!-- Left: Location Title and Addresses -->
+                                <div style="flex: 1;">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <p class="fw-bold">Find Our Locations:</p>
+                                        <p class="fw-bold text-center" style="width: 85px;">Legal</p>
+                                    </div>
+
+                                    <!-- Toronto -->
+                                    <div class="d-flex align-items-center mt-4">
+                                        <div class="flex-grow-1">
+                                            <p style="color: white; font-weight: bold;">Breinrock Limited</p>
+                                            <p>100 King Street West, Suite 5700</p>
+                                            <p>Toronto M5X 1C7 ON Canada</p>
+                                        </div>
+                                        <a href="index.html?country=ca" class="ms-3">
+                                            <img src="imgs/icons/canada.png" alt="Canada" style="width: 85px;">
+                                        </a>
+                                    </div>
+
+                                    <!-- London -->
+                                    <div class="d-flex align-items-center mt-4">
+                                        <div class="flex-grow-1">
+                                            <p style="color: white; font-weight: bold;">Breinrock UK Ltd</p>
+                                            <p>73 Mornington Street</p>
+                                            <p>London NW1 7QE, UK</p>
+                                        </div>
+                                        <a href="index.html?country=uk" class="ms-3">
+                                            <img src="imgs/icons/uk.png" alt="UK" style="width: 85px;">
+                                        </a>
+                                    </div>
+
+                                    <!-- Prague -->
+                                    <div class="d-flex align-items-center mt-4">
+                                        <div class="flex-grow-1">
+                                            <p style="color: white; font-weight: bold;">Breinrock s.r.o.</p>
+                                            <p>Evropska 2758/11, Dejvice,</p>
+                                            <p>16000 Prague 6, Czech Republic</p>
+                                        </div>
+                                        <a href="index.html?country=cz" class="ms-3">
+                                            <img src="imgs/icons/czech.png" alt="Czech Republic" style="width: 85px;">
+                                        </a>
+                                    </div>
+
+                                    <!-- Limassol -->
+                                    <div class="d-flex align-items-center mt-4">
+                                        <div class="flex-grow-1">
+                                            <p style="color: white; font-weight: bold;">Breinrock Ltd.</p>
+                                            <p>4 Thekla Lysiotis, Harmony House</p>
+                                            <p>Office 11, 1st Floor</p>
+                                            <p>3030 Limassol, Cyprus</p>
+                                        </div>
+                                        <a href="index.html?country=cy" class="ms-3">
+                                            <img src="imgs/icons/cyprus.png" alt="Cyprus" style="width: 85px;">
+                                        </a>
+                                    </div>
+
+                                    <!-- Dubai -->
+                                    <div class="d-flex align-items-center mt-4">
+                                        <div class="flex-grow-1">
+                                            <p style="color: white; font-weight: bold;">Breinrock (DIFC) Tech Ltd</p>
+                                            <p>Emirates Financial Tower, S2109,</p>
+                                            <p>DIFC, Dubai, UAE</p>
+                                        </div>
+                                        <a href="index.html?country=ae" class="ms-3">
+                                            <img src="imgs/icons/uae.png" alt="UAE" style="width: 85px;">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Policies and Footer bottom -->
+        <div class="policies mt-5 mb-3 text-center">
+            <a href="cookiepolicy.html" class="me-3">Cookie Policy</a>
+            <a href="privacypolicy.html" class="me-3">Privacy Policy</a>
+            <a href="legal.html">Legal</a>
+            <div id="copyrightpar">
+                <p id="copyrightpar">&copy; <span id="year"></span> Breinrock, All Rights Reserved</p>
+            </div>
+
+            <script>
+                document.getElementById("year").textContent = new Date().getFullYear();
+            </script>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="animation.js"></script>
+    <script src="background.js"></script>
+    <script src="mouseparticles.js"></script>
+    <script src="contactheader.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#customers-testimonials').owlCarousel({
+                loop: true,
+                center: true,
+                items: 3,
+                margin: 10,
+                autoplay: true,
+                dots: true,
+                autoplayTimeout: 3000,
+                smartSpeed: 1000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    1170: {
+                        items: 3
+                    }
+                }
+            });
+        });
+
+        // Demo Popup Functions
+        function openDemoPopup() {
+            const popup = document.getElementById('demoPopup');
+            popup.classList.add('show');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeDemoPopup() {
+            const popup = document.getElementById('demoPopup');
+            popup.classList.remove('show');
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+
+        // Close popup when clicking outside the content
+        document.getElementById('demoPopup').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeDemoPopup();
+            }
+        });
+
+        // Close popup with Escape key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeDemoPopup();
+            }
+        });
+    </script>
+</body>
+
+</html>
