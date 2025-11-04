@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="breinrock, international banking, finance, finance solutions, global payments">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../responsive.css">
+    <link rel="stylesheet" href="../../animation.css">
+    <link rel="stylesheet" href="../../background.css">
+    <link rel="stylesheet" href="../../contactheader.css">
+
+    <link rel="icon" href="imgs/icons/relicon.png">
+    <title>Breinrock News
+
+
+    </title>
+    <style>
+        /* Initial transparent background */
+        header {
+            background-color: transparent;
+            transition: background-color 0.5s ease;
+        }
+
+        /* Background color after scrolling */
+        header.scrolled {
+            background-color: rgb(12, 13, 41);
+            /* Your desired background color */
+        }
+
+        header.expanded {
+            background-color: rgb(12, 13, 41);
+        }
+
+        .blog-title-link:hover {
+            color: #000;
+            text-decoration: none;
+        }
+
+        /* Newsletter Styles */
+        .newsletterform input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .newsletterform button {
+            position: relative;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .newsletterform button:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        #newsletterMessage {
+            padding: 10px;
+            border-radius: 5px;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        #newsletterMessage.success {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #newsletterMessage.error {
+            background-color: #f44336;
+            color: white;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .success-checkmark {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #fff;
+            color: #4CAF50;
+            text-align: center;
+            line-height: 16px;
+            margin-right: 5px;
+            animation: scaleIn 0.3s ease-in;
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WW6R5ZQT5V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WW6R5ZQT5V');
+</script>
+<body>
+    <div class="gradient-bg">
+        <div class="gradients-container">
+            <div class="g1"></div>
+            <div class="g2"></div>
+            <div class="g3"></div>
+            <div class="g4"></div>
+            <div class="g5"></div>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+              <img class="logomain" src="imgs/logo.png" alt="Logo">
+            </a>
+      
+            <!-- Hamburger Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <!-- Collapsible Content -->
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+              <!-- Center Navigation Links -->
+              <ul class="navbar-nav mx-auto" id="navItems">
+                <li class="nav-item">
+                  <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-white dropdown-toggle" href="#" id="productsDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Products
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark bg-black" aria-labelledby="productsDropdown">
+                    <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="corporate.html" id="corporateDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Corporate and Personal Accounts</a>
+                        <ul class="dropdown-menu dropdown-menu-dark bg-black" aria-labelledby="corporateDropdown">
+                            <li><a class="dropdown-item" href="payment-network.html">Breinrock Payment Network</a></li>
+                            <li><a class="dropdown-item" href="payment-network-international.html">BPN International</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="prepaid.html">Prepaid Cards</a></li>
+                    <li><a class="dropdown-item" href="foreign.html">Foreign Exchange</a></li>
+                    <li><a class="dropdown-item" href="baas.html">BaaS</a></li>
+                    <li><a class="dropdown-item" href="digital-assets.html">Digital Assets</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-white dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    About Us
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark bg-black" aria-labelledby="aboutDropdown">
+                    <li><a class="dropdown-item" href="about.html">Learn More</a></li>
+                    <li><a class="dropdown-item" href="news.html">News</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+      
+              <!-- Desktop: Right Auth Links -->
+              <ul class="navbar-nav d-none d-lg-flex">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="https://ebank.breinrock.com/signIn" target="_blank">Log In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="https://ebank.breinrock.com/signUp" target="_blank">Sign Up</a>
+                </li>
+              </ul>
+      
+              <!-- Mobile Auth Links – inside hamburger -->
+              <ul class="navbar-nav d-lg-none mt-3">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="https://ebank.breinrock.com/signIn" target="_blank">Log In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="https://ebank.breinrock.com/signUp" target="_blank">Sign Up</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+      
+      
+    <svg width="0" height="0">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+                <feColorMatrix in="blur" mode="hardLight" values="0 0 0 0 0
+                                                                 0 0 0 0 0
+                                                                 0 0 0 0 0
+                                                                 0 0 0 10 -10" result="coloredBlur" />
+                <feMerge>
+                    <feMergeNode in="SourceGraphic" />
+                    <feMergeNode in="coloredBlur" />
+                </feMerge>
+            </filter>
+        </defs>
+    </svg>
+    <section id="aboutmain">
+        <div style="margin-top: 10%;" class="container">
+            <div class="row">
+                <div class="container mt-5">
+                    <!-- Header and Dropdown in One Row -->
+                    <div>
+                        <h1 class="text-white" style="font-size: 3.5rem; font-weight: 800;" id="mainabout-title">NEWS
+                        </h1>
+                        <p class="pt-4 text-white">Latest Updates, Announcements, and Insights from Breinrock</p>
+                    </div>
+
+                    <!-- Description Text Below -->
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <section class="blog-section py-5">
+        <div class="container">
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="blog-card h-100">
+                        <a href="news-pages/fintech-ai.html" class="blog-img-link">
+                            <img src="imgs/news/news1.png" class="img-fluid blog-img" alt="Blog Image 1">
+                        </a>
+                        <div class="blog-content p-3">
+                            <a href="news-pages/fintech-ai.html" class="blog-title-link">
+                                <h5 class="blog-title">Fintech and AI: Revolutionizing the Financial Landscape</h5>
+                            </a>
+                            <a href="news-pages/fintech-ai.html" class="blog-link">READ MORE »</a>
+                            <p class="blog-date">October 30, 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="blog-card h-100">
+                        <a href="news-pages/multycurrency-account.html" class="blog-img-link">
+                            <img src="imgs/news/news2.png" class="img-fluid blog-img" alt="Blog Image 2">
+                        </a>
+                        <div class="blog-content p-3">
+                            <a href="news-pages/multycurrency-account.html" class="blog-title-link">
+                                <h5 class="blog-title">Our New MultiCurrency Account!</h5>
+                            </a>
+                            <a href="news-pages/multycurrency-account.html" class="blog-link">READ MORE »</a>
+                            <p class="blog-date">November 22, 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="blog-card h-100">
+                        <a href="news-pages/baas-news.html" class="blog-img-link">
+                            <img src="imgs/news/news3.png" class="img-fluid blog-img" alt="Blog Image 3">
+                        </a>
+                        <div class="blog-content p-3">
+                            <a href="news-pages/baas-news.html" class="blog-title-link">
+                                <h5 class="blog-title">The uprise of BAAS in 2024</h5>
+                            </a>
+                            <a href="news-pages/baas-news.html" class="blog-link">READ MORE »</a>
+                            <p class="blog-date">February 8, 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-5">
+                <!-- Card 4 -->
+                <div class="col-md-4">
+                    <div class="blog-card h-100">
+                        <a href="news-pages/neobank-considerations.html" class="blog-img-link">
+                            <img src="imgs/news/news4.png" class="img-fluid blog-img" alt="Blog Image 4">
+                        </a>
+                        <div class="blog-content p-3">
+                            <a href="news-pages/neobank-considerations.html" class="blog-title-link">
+                                <h5 class="blog-title">5 Things to Consider When Choosing a Neobank</h5>
+                            </a>
+                            <a href="news-pages/neobank-considerations.html" class="blog-link">READ MORE »</a>
+                            <p class="blog-date">March 11, 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-4">
+                    <div class="blog-card h-100">
+                        <a href="news-pages/crossborder-advantages.html" class="blog-img-link">
+                            <img src="imgs/news/news5.png" class="img-fluid blog-img" alt="Blog Image 5">
+                        </a>
+                        <div class="blog-content p-3">
+                            <a href="news-pages/crossborder-advantages.html" class="blog-title-link">
+                                <h5 class="blog-title">How Cross-Border Payments Can Help Your Business</h5>
+                            </a>
+                            <a href="news-pages/crossborder-advantages.html" class="blog-link">READ MORE »</a>
+                            <p class="blog-date">March 15, 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-md-4">
+                    <div class="blog-card h-100">
+                        <a href="news-pages/realestate-investing.html" class="blog-img-link">
+                            <img src="imgs/news/news6.png" class="img-fluid blog-img" alt="Blog Image 6">
+                        </a>
+                        <div class="blog-content p-3">
+                            <a href="news-pages/realestate-investing.html" class="blog-title-link">
+                                <h5 class="blog-title">Investing in Real Estate: What Payment Methods & Cross-Border
+                                    Payments Are Trending?</h5>
+                            </a>
+                            <a href="news-pages/realestate-investing.html" class="blog-link">READ MORE »</a>
+                            <p class="blog-date">August 26, 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr style="background-color: #fff;">
+    <section id="linkedIn-feed">
+        <h2 class="text-center text-white pt-5 pb-5">LinkedIn Feed</h2>
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-6480f80e-56dc-4523-9406-e9111035db9e" data-elfsight-app-lazy></div>
+    </section>
+
+
+
+    <footer style="background-color: rgb(12, 13, 41);" class="text-white mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Logo -->
+                <div class="col-lg-3 col-md-3 mt-5">
+                    <img style="width: 150px;" class="logo" src="imgs/logo.png" alt="Logo">
+                </div>
+    
+                <!-- Start a conversation + Newsletter -->
+                <div class="col-lg-3 col-md-3 mt-5">
+                    <p><b>Start a conversation:</b></p>
+                    <p>welcome@breinrock.com</p>
+    
+                    <!-- Newsletter -->
+                    <div class="newsletter mt-5">
+                        <p><b>Newsletter</b></p>
+                        <div class="newsletterform">
+                            <p class="text-white">Subscribe to our newsletter to hear about our updates and events.</p>
+                            <form id="newsletterForm" action="https://formsubmit.co/welcome@breinrock.com" method="POST">
+                                <input type="hidden" name="_subject" value="New Newsletter Subscription">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_template" value="table">
+                                <input type="hidden" name="_next" value="https://breinrock.com/news.html?subscribed=true">
+                                <input type="email" name="email" id="newsletterEmail" placeholder="Email" required>
+                                <button type="submit" class="button button1 mt-3 d-inline-block" id="subscribeBtn">
+                                    <span class="btn-text">Subscribe</span>
+                                    <span class="btn-loading" style="display: none;">
+                                        <span class="spinner"></span> Subscribing...
+                                    </span>
+                                </button>
+                            </form>
+                            <div id="newsletterMessage" class="mt-3" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Locations and Legal Flags -->
+                <div class="col-lg-6 col-md-6 mt-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-between">
+                                <!-- Left: Location Title and Addresses -->
+                                <div style="flex: 1;">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <p class="fw-bold">Find Our Locations:</p>
+                                        <p class="fw-bold text-center" style="width: 85px;">Legal</p>
+                                    </div>
+
+                                    <!-- Toronto -->
+                                    <div class="d-flex align-items-center mt-4">
+                                        <div class="flex-grow-1">
+                                            <p style="color: white; font-weight: bold;">Breinrock Limited</p>
+                                            <p>100 King Street West, Suite 5700</p>
+                                            <p>Toronto M5X 1C7 ON Canada</p>
+                                        </div>
+                                        <a href="index.html?country=ca" class="ms-3">
+                                            <img src="imgs/icons/canada.png" alt="Canada" style="width: 85px;">
+                                        </a>
+                                    </div>
+
+                                    <!-- London -->
+                                    <div class="d-flex align-items-center mt-4">
+                                        <div class="flex-grow-1">
+                                            <p style="color: white; font-weight: bold;">Breinrock UK Ltd</p>
+                                            <p>73 Mornington Street</p>
+                                            <p>London NW1 7QE, UK</p>
+                                        </div>
+                                        <a href="index.html?country=uk" class="ms-3">
+                                            <img src="imgs/icons/uk.png" alt="UK" style="width: 85px;">
+                                        </a>
+                                    </div>
+
+                                    <!-- Prague -->
+                                    <div class="d-flex align-items-center mt-4">
+                                        <div class="flex-grow-1">
+                                            <p style="color: white; font-weight: bold;">Breinrock s.r.o.</p>
+                                            <p>Evropska 2758/11, Dejvice,</p>
+                                            <p>16000 Prague 6, Czech Republic</p>
+                                        </div>
+                                        <a href="index.html?country=cz" class="ms-3">
+                                            <img src="imgs/icons/czech.png" alt="Czech Republic" style="width: 85px;">
+                                        </a>
+                                    </div>
+
+                                    <!-- Limassol -->
+                                    <div class="d-flex align-items-center mt-4">
+                                        <div class="flex-grow-1">
+                                            <p style="color: white; font-weight: bold;">Breinrock Ltd.</p>
+                                            <p>4 Thekla Lysiotis, Harmony House</p>
+                                            <p>Office 11, 1st Floor</p>
+                                            <p>3030 Limassol, Cyprus</p>
+                                        </div>
+                                        <a href="index.html?country=cy" class="ms-3">
+                                            <img src="imgs/icons/cyprus.png" alt="Cyprus" style="width: 85px;">
+                                        </a>
+                                    </div>
+
+                                    <!-- Dubai -->
+                                    <div class="d-flex align-items-center mt-4">
+                                        <div class="flex-grow-1">
+                                            <p style="color: white; font-weight: bold;">Breinrock (DIFC) Tech Ltd</p>
+                                            <p>Emirates Financial Tower, S2109,</p>
+                                            <p>DIFC, Dubai, UAE</p>
+                                        </div>
+                                        <a href="index.html?country=ae" class="ms-3">
+                                            <img src="imgs/icons/uae.png" alt="UAE" style="width: 85px;">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+        <!-- Policies and Footer bottom -->
+        <div class="policies mt-5 mb-3 text-center">
+            <a href="cookiepolicy.html" class="me-3">Cookie Policy</a>
+            <a href="privacypolicy.html" class="me-3">Privacy Policy</a>
+            <a href="legal.html">Legal</a>
+            <div id="copyrightpar">
+                <p id="copyrightpar">&copy; <span id="year"></span> Breinrock, All Rights Reserved</p>
+            </div>
+    
+            <script>
+                document.getElementById("year").textContent = new Date().getFullYear();
+            </script>
+        </div>
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../../animation.js"></script>
+    <script src="../../background.js"></script>
+    <script src="contactheader.js"></script>
+    
+    <script>
+        // Newsletter Form Handler
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('newsletterForm');
+            const emailInput = document.getElementById('newsletterEmail');
+            const subscribeBtn = document.getElementById('subscribeBtn');
+            const btnText = subscribeBtn.querySelector('.btn-text');
+            const btnLoading = subscribeBtn.querySelector('.btn-loading');
+            const messageDiv = document.getElementById('newsletterMessage');
+
+            // Check if user just subscribed (from redirect)
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('subscribed') === 'true') {
+                showMessage('Thank you for subscribing to our newsletter!', 'success');
+                // Remove the parameter from URL
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                // Validate email
+                const email = emailInput.value.trim();
+                if (!email || !isValidEmail(email)) {
+                    showMessage('Please enter a valid email address.', 'error');
+                    return;
+                }
+
+                // Show loading state
+                subscribeBtn.disabled = true;
+                btnText.style.display = 'none';
+                btnLoading.style.display = 'inline-block';
+                messageDiv.style.display = 'none';
+
+                // Submit form via AJAX
+                fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => {
+                    if (response.ok) {
+                        // Success
+                        emailInput.value = '';
+                        showMessage('✓ Thank you for subscribing to our newsletter!', 'success');
+                        
+                        // Reset button after animation
+                        setTimeout(() => {
+                            btnText.style.display = 'inline-block';
+                            btnLoading.style.display = 'none';
+                            subscribeBtn.disabled = false;
+                        }, 1000);
+                    } else {
+                        throw new Error('Subscription failed');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    showMessage('Oops! Something went wrong. Please try again.', 'error');
+                    
+                    // Reset button
+                    btnText.style.display = 'inline-block';
+                    btnLoading.style.display = 'none';
+                    subscribeBtn.disabled = false;
+                });
+            });
+
+            function isValidEmail(email) {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            }
+
+            function showMessage(message, type) {
+                messageDiv.textContent = message;
+                messageDiv.className = 'mt-3 ' + type;
+                messageDiv.style.display = 'block';
+
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    messageDiv.style.display = 'none';
+                }, 5000);
+            }
+        });
+    </script>
+    
+</body>
+
+</html>

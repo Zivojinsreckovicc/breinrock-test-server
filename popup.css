@@ -1,0 +1,107 @@
+:root {
+    --color-bg1: rgb(12, 13, 41);
+  }
+  
+  /* Disable website scrolling when popup is open */
+  body.popup-open {
+    overflow: hidden;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeIn 0.4s ease;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .popup-inner {
+    position: relative;
+    background-color: var(--color-bg1);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    max-height: 80vh;
+    width: 100%;
+    overflow-y: auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    position: relative;
+  }
+  
+  .popup-inner::-webkit-scrollbar {
+    width: 6px;
+  }
+  .popup-inner::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+ 
+  
+  
+  
+  .flag-img {
+    width: 90px;
+    margin: 15px auto;
+  }
+  
+  #popupLinks {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  #popupLinks a {
+    display: block;
+    color: #ffffff;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @media (max-width: 768px) {
+    .popup-inner {
+      padding: 20px;
+      max-height: 80vh;
+      font-size: 14px;
+    }
+  
+    #popupLinks a {
+      font-size: 13px;
+    }
+  }
+  .popup-sticky-bar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+    padding: 10px 15px;
+    z-index: 100;
+  }
+  
+  .close-popup {
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    border: none;
+  }
+  
